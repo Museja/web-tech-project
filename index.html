@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div id="header">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PetFam Adoption Agency</title>
-        <h1>PetFam Adoption Agency</h1>
-        <h1> Home </h1>
-    </div>   
-    <link rel="stylesheet" href="style.css">
+        <header>
+            <h1>PetFam Adoption Agency</h1>
+            <h1>Home</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About_Us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <h4>Welcome to PetFam Adoption Agency – Where Every Pet Finds a Loving Home!</h4>
+        </header>
+        
+    </head>
+    <body>
+        <link rel="stylesheet" href="style.css">
     <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+section{
+    margin-bottom: 2em;
+}
 header{
-    background-color: #333;
+    background-color: burlywood;
     text-align: center;
 }
+nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: grey;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f4f6;
@@ -28,7 +60,7 @@ body {
 }
 h1{
     font-size: 2.5em;
-    color: white;
+    color: burlywood;
     text-align: center;
     margin-bottom: 0.5em;
     background-color: #555;
@@ -36,13 +68,19 @@ h1{
 }
 h2{
     font-size: 2em;
-    color: #32CD32;
+    color: burlywood;
     margin-bottom: 0.5em;
 }
 h3{
     font-size: 1.75em;
-    color: #1E90FF;
+    color: burlywood;
     margin-bottom: 0.5em;
+}
+h4{
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 1em;
+    text-align: center;
 }
 p{
     font-size: 1.1em;
@@ -61,7 +99,7 @@ footer{
     margin-top: 2em;
 }
 footer a{
-    color: #FFD700;
+    color: burlywood;
     text-decoration: none;
 }
 footer a:hover{
@@ -74,11 +112,7 @@ table {
     }
     </style>
     <body>
-        <div id="header"
-        <a href="index.html">Home</a>
-        <a href="About_Us.html">About Us</a>
-        <p>Welcome to PetFam Adoption Agency – Where Every Pet Finds a Loving Home!</p>
-    </div>
+    
     <hr>
     </hr>
         
@@ -117,8 +151,7 @@ table {
 <a href="https://bestfriends.org/donate" target="_blank">Bestfriends</a>
 <a href="https://www.aspca.org/ways-to-give" target="_blank">ASPCA</a>
 <a href="https://www.internationalanimalrescue.org/donate?gclid=CNDOn4CxhdMCFQwmvQodk10DuA" target="_blank">International Animal Rescue</a>
-   <div id="footer>"
-    <div id="Footer">
+   <div id="footer">
         <footer>
             <h3>Contact us</h3>
             <hr/>
@@ -138,7 +171,7 @@ table {
                     </tr>
                     </tr>
             </table>
-            <p>© 2021 PetFam Adoption Agency. All rights reserved.</p>
+            <p style="text-align: center;">© 2021 PetFam Adoption Agency. All rights reserved.</p>
         </footer>
         </div>
 </body>
