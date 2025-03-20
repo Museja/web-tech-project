@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PetFam Adoption Agency</title>
         <h1>PetFam Adoption Agency</h1>
-        <p>Welcome to PetFam Adoption Agency – Where Every Pet Finds a Loving Home!</p>
+        <br>
+        <h1>About Us</h1>
     </head>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -21,29 +22,33 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 h1{
     font-size: 2.5em;
-    color: #FF6347;
+    color: white;
     text-align: center;
     margin-bottom: 0.5em;
+    background-color: #555;
 
 }
 h2{
     font-size: 2em;
     color: #32CD32;
     margin-bottom: 0.5em;
+    text-align: center;
 }
 h3{
     font-size: 1.75em;
     color: #1E90FF;
     margin-bottom: 0.5em;
+    text-align: center;
 }
 p{
     font-size: 1.1em;
     color: #555;
     margin-bottom: 1em;
-    text-align: justify;
+    text-align: center;
 }
 section{
     margin-bottom: 2em;
@@ -58,15 +63,28 @@ footer{
 footer a{
     color: #FFD700;
     text-decoration: none;
+    text-align: center;
 }
 footer a:hover{
     text-decoration: underline;
+    text-align: center;
 }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
     </style>
     <body>
+        <div id="header">
         <a href="index.html">Home</a>
         <a href="About_Us.html">About Us</a>
-        <br><br><br>
+        <p>Welcome to PetFam Adoption Agency – Where Every Pet Finds a Loving Home!</p>
+        </div>
+        <hr>
+    </hr>
+
         
         <img src="images/polish_save (6).jpg" alt="Mimi" width="320" height="300">
         <h2>Meet the founder</h2>
@@ -86,6 +104,7 @@ footer a:hover{
             <textarea id="message" name="message"></textarea><br>
             <input type="submit" value="Submit">
         </form>
+        <div id="Footer">
         <footer>
             <h3>Contact us</h3>
             <hr/>
@@ -105,5 +124,7 @@ footer a:hover{
                     </tr>
                     </tr>
             </table>
+            <p>© 2021 PetFam Adoption Agency. All rights reserved.</p>
         </footer>
+        </div>
     </body>
