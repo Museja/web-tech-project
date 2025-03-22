@@ -4,123 +4,152 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PetFam Adoption Agency</title>
-        <header>
-            <h1>PetFam Adoption Agency</h1>
-            <h1>About Us</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About_Us.html">About Us</a></li>
-                </ul>
-            </nav>
-            <h4>Welcome to PetFam Adoption Agency – Where Every Pet Finds a Loving Home!</h4>
-        </header>
     </head>
+        
     <body> 
     <link rel="stylesheet" href="style.css">
     <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-section{
-    margin-bottom: 2em;
-}
-header{
-    background-color: burlywood;
-    text-align: center;
-}
-nav ul {
-            list-style: none;
+        * {
+            margin: 0;
             padding: 0;
         }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        body{
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+                line-height: 1.6;
+                padding-top: 50px;
+                text-align: center;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        header {
+            text-align: center;
         }
 
-        nav ul li a {
-            color: grey;
+        h1 {
+                font-size: 2.5em;
+                background-color: black;
+                color: lightblue;
+                text-align: center;
+                margin-bottom: 0em;
+                padding: 0px;
+            }
+
+        h2 {
+            font-size: 2em;
+            background-color: white;
+            color: blue;
+            margin-bottom: 0.5em;
+        }
+
+        h3 {
+            font-size: 1.75em;
+            color: black;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 1.5em;
+            color: black;
+            background-color: white;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: black;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 1em;
+        }
+
+        header {
+            background-color: white;
+            text-align: center;
+        }
+        .navbar {
+            list-style-type: none;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+            margin: 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar li {
+            margin: 0px;
+            display: inline-block;
+        }
+
+        .navbar a {
+            color: black;
             text-decoration: none;
             font-size: 18px;
+            padding: 14px 20px;
+            display: block;
         }
-        nav ul li a:hover {
-            text-decoration: underline;
+
+        .navbar a:hover {
+            background-color: lightblue;
         }
+
+        footer {
+         background-color: lightblue; 
+         color: black; 
+         position: absolute;
+         text-align: center; 
+         padding: 10px;
+         width: 100%; 
+         }
+
+         footer a {
+         color: black; 
+         background-color: lightblue;
+          text-decoration: none; 
+          margin: 0 15px;
+          transiton: color 0.2s ease-in-out;
+         }
+
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f4f6;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
-h1{
-    font-size: 2.5em;
-    color: burlywood;
-    text-align: center;
-    margin-bottom: 0.5em;
-    background-color: #555;
-
-}
-h2{
-    font-size: 2em;
-    color: burlywood;
-    margin-bottom: 0.5em;
-    text-align: center;
-}
-h3{
-    font-size: 1.75em;
-    color: burlywood;
-    margin-bottom: 0.5em;
-    text-align: center;
-}
-h4{
-    font-size: 1.5em;
-    color: #555;
-    margin-bottom: 1em;
-    text-align: center;
-}
-p{
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 1em;
-    text-align: center;
-}
-section{
-    margin-bottom: 2em;
-}
-footer{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 2em;
-}
-footer a{
-    color: #FFD700;
-    text-decoration: none;
-    text-align: center;
-}
-footer a:hover{
-    text-decoration: underline;
-    text-align: center;
+    flex-grow: 1;
 }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        text-align: center;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
     </style>
     <body>
-        <hr>
-    </hr>
-        
-        <img src="images/polish_save (6).jpg" alt="Mimi" width="320" height="300">
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About_Us.html">About Us</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>PetFam Adoption Agency <br> About Us</h1>
+        </header>
+    <section id="About Us">
+        <h4>Welcome to PetFam Adoption Agency – Where Every Pet Finds a Loving Home!</h4>
+        <img src="images/polish_save (6).jpg" alt="Founder" width="320" height="300">
         <h2>Meet the founder</h2>
         <p>Hi, I’m Monique Miller, the founder of PetFam Adoption Agency. I started this organization with a simple mission in mind: to provide a safe and loving haven for abandoned pets in need. My passion for animals has always been a driving force in my life, and I’m dedicated to making a difference in the lives of these furry companions. At PetFam, we believe that every pet deserves a second chance at happiness, and we’re committed to helping them find loving families who will cherish them forever. Join us on this journey to create a brighter future for animals in need – together, we can make a real difference!</p>
         <br>
@@ -138,7 +167,8 @@ footer a:hover{
             <textarea id="message" name="message"></textarea><br>
             <input type="submit" value="Submit">
         </form>
-        <div id="Footer">
+    </section>
+        <dsection id="Footer">
         <footer>
             <h3>Contact us</h3>
             <hr/>
@@ -158,7 +188,8 @@ footer a:hover{
                     </tr>
                     </tr>
             </table>
+            <br>
             <p style="text-align: center;">© 2021 PetFam Adoption Agency. All rights reserved.</p>
         </footer>
-        </div>
+    </section>
     </body>
